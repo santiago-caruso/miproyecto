@@ -1,0 +1,161 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    list-style: none;
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+.navbar{
+    background-color: dodgerblue;
+    box-shadow: 2px 2px 20px rgba(0,0, 0, 0.5);
+    background-image: linear-gradient(to right, rgba(13, 87, 184, 0.5), rgba(40, 179, 249, 0.5));
+}
+
+.navbar-toggler{
+    border: none;
+}
+.navbar-toggler i{
+    color: azure;
+}
+
+#hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align:center ;
+    height: 90vh;
+    color: white;
+    background-image: linear-gradient( 0deg, rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url(Images/Hero.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+h1{
+    font-size: 50px;
+    padding-right: 20px;
+}
+
+
+button{
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: deepskyblue;
+    color: white;
+    margin-bottom: 10px;
+}
+
+h2{
+    background-color: rgba(4, 73, 113, 0.6);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin: 0%;
+}
+
+.col-sm-6{
+    height: 500px;
+}
+
+.col-sm-6.nright{
+    height: auto;
+    background-color: rgb(216, 236, 243);
+}
+
+
+.nleft{
+background-image: url(Images/plane-4301615_1280.png);
+background-size: cover;
+background-position: center;
+}
+
+
+.container{
+    max-width: 1200px;
+}
+
+.d-item{
+    height: 800px;
+
+}
+
+.d-img{
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.6);
+}
+
+
+.footer{
+    background-color: rgba(4, 73, 113, 0.609);
+    padding: 80px 0;
+}
+
+.footer-row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.footer-links{
+    width: 25%;
+    padding: 0 15px;
+}
+
+.footer-links h4{
+font-size: 20px;
+color: rgb(255, 255, 255);
+margin-bottom: 25px;
+font-weight: 500;
+border-bottom: 2px solid rgb(7, 102, 169);
+padding-bottom:10px ;
+display: inline-block;
+}
+
+.footer-links ul li a{
+font-size: 18px;
+text-decoration: none;
+color: aliceblue;
+display: block;
+margin-bottom: 15px;
+transition: all .3s ease;
+}
+
+.footer-links ul li a:hover{
+    color: rgb(60, 171, 241);
+    padding-left: 6px;
+}
+
+.social-link a {
+    display: inline-block;
+    min-height: 40px;
+    width: 40px;
+    background-color: rgba(255, 255, 255, 0.2);
+    text-align: center;
+    line-height: 40px;
+    margin: 0 10px 10px 0;
+    border-radius: 50%;
+    color: aliceblue;
+    transition: all .5s ease;
+}
+
+.social-link a:hover{
+    background-color: dodgerblue;
+}
+
+@media(max-width: 991px){
+    .footer-row{
+        text-align: center;
+    }
+.footer-links{
+    width: 100%;
+    margin-bottom: 30px;
+}
+}
